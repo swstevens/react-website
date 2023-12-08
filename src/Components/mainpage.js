@@ -12,14 +12,14 @@ import Portfolio from "./Portfolio";
 
 export const MainPage = (data) => {
     return (
-        <div name='MainPage'>
+        <>
             <Header data={data.data.main} />
             <About data={data.data.main} />
             <Resume data={data.data.resume} />
             <Portfolio data={data.data.portfolio} />
             <Contact data={data.data.main} />
             <Footer data={data.data.main} />
-        </div>
+        </>
     )
 }
 

@@ -1,50 +1,45 @@
-import React from "react";
-// import Resume from "./Resume";
+import React from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { AsciiRenderer, OrbitControls } from "@react-three/drei";
 
-// import "../App.css";
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from "@react-three/drei";
-// const geometry = new THREE.BoxGeometry( 1, 1, 1 ); 
-// const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} ); 
-// const cube = new THREE.Mesh( geometry, material ); 
-// scene.add( cube );
-// const Cube = () => {
-//   const mesh = useRef();
-//   return (
-//     <mesh ref={mesh}>
-//       <boxGeometry args={[1, 1, 1]} />
-//       <meshBasicMaterial color={0xffffff} />
-//     </mesh>
-//   );
-// };
-
-// export const ProjectsPage = (data) => {
-//   return (
-//     <div className="projectPage">
-//       <Resume data={data.data.resume} />
-//       <Canvas>
-//         <Cube />
-//       </Canvas>
-//     </div>
-//   )
-// }
 function Box () {
   return (
     <mesh>
-      <meshLambertMaterial attach='material' color='hotpink' />
       <boxGeometry args={[2, 2, 2]} />
+      <meshStandardMaterial roughness={0.2} metalness={.1} color={'hotpink'}/> 
     </mesh>
   )
 }
+const myMesh = React.useRef();
+function Cubes(){
+
+  useFrame(({ clock }) => {
+    const a = clock.getElapsedTime();
+    myMesh.current.rotation.x = a;
+    myMesh.current.rotation.y = a;
+  });
+
+  return (
+    <instancedMesh args={[null, null, 10]}>
+      <torusKnotGeometry args={[7, 3, 100, 16]}></torusKnotGeometry>
+      <meshPhongMaterial color="tomato" />
+    </instancedMesh>
+  );
+};
+
+
 export const ProjectsPage = () => {
   return (
-    <Canvas>
-      <OrbitControls />
-      <ambientLight intensity={0.5} />
-      <Box />
-    </Canvas>
+    <div style={{height:"100vh"}}>
+      <Canvas alpha={true} camera={{position: [0, 20, 0] }}>
+          <OrbitControls />
+          <AsciiRenderer fgColor="white" bgColor="transparent"/>
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[10, 15, 10]} intensity={1}/>
+          <Cubes />
+      </Canvas>
+    </div>
   )
 }
-
 
 export default ProjectsPage;

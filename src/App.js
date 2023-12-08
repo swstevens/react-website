@@ -3,13 +3,6 @@ import ReactGA from "react-ga";
 import $ from "jquery";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-// import Header from "./Components/Header";
-// import Footer from "./Components/Footer";
-// import About from "./Components/About";
-// import Resume from "./Components/Resume";
-// import Contact from "./Components/Contact";
-// import Portfolio from "./Components/Portfolio";
 import ProjectsPage from './Components/projects'
 import MainPage from './Components/mainpage'
 
@@ -49,14 +42,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
         <BrowserRouter>
             <Routes>
                 <Route exact path={HOME_ROUTE} element={<MainPage data={this.state.resumeData} />}/>
                 <Route exact path={PROJECTS_ROUTE} element={<ProjectsPage data={this.state.resumeData}/>}/>
             </Routes>
         </BrowserRouter>
-      </div>
     );
   }
 }
