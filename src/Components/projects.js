@@ -29,6 +29,7 @@ export const ProjectsPage = () => {
     <div style={{height:"100vh"}}>
       <Canvas alpha={true} camera={{position: [0, 25, 0] }}>
           <OrbitControls />
+          <color attach="background" args={['black']} />
           <AsciiRenderer fgColor="white" bgColor="transparent"/>
           <ambientLight intensity={0.5} />
           <directionalLight position={[10, 15, 10]} intensity={1}/>
