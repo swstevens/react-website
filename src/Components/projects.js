@@ -10,17 +10,13 @@ function Box () {
     </mesh>
   )
 }
-const myMesh = React.useRef();
-function Cubes(){
 
-  useFrame(({ clock }) => {
-    const a = clock.getElapsedTime();
-    myMesh.current.rotation.x = a;
-    myMesh.current.rotation.y = a;
-  });
-
+function TorusKnot(){
+  const ref = React.useRef()
+  useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta / 2))
+ 
   return (
-    <instancedMesh args={[null, null, 10]}>
+    <instancedMesh args={[null, null, 10]} ref={ref}>
       <torusKnotGeometry args={[7, 3, 100, 16]}></torusKnotGeometry>
       <meshPhongMaterial color="tomato" />
     </instancedMesh>
@@ -31,12 +27,12 @@ function Cubes(){
 export const ProjectsPage = () => {
   return (
     <div style={{height:"100vh"}}>
-      <Canvas alpha={true} camera={{position: [0, 20, 0] }}>
+      <Canvas alpha={true} camera={{position: [0, 25, 0] }}>
           <OrbitControls />
           <AsciiRenderer fgColor="white" bgColor="transparent"/>
           <ambientLight intensity={0.5} />
           <directionalLight position={[10, 15, 10]} intensity={1}/>
-          <Cubes />
+          <TorusKnot />
       </Canvas>
     </div>
   )
