@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Zmage from "react-zmage";
 import Fade from "react-reveal";
 
 let id = 0;
@@ -12,10 +11,12 @@ class Portfolio extends Component {
 
       return (
         <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-          </div>
+            <div className="item-wrap">
+              <a href={projects.url}>
+                <img alt={projects.title} src={projectImage} disabled={true} />
+              </a>
+              <div style={{ textAlign: "center" }}>{projects.title}</div>
+            </div>
         </div>
       );
     });
