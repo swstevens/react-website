@@ -3,20 +3,20 @@
     "name":"Shea Stevens",
     "description":"I am a fullstack engineer and I use python react and to develop frontend/backend communication",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"I am an avid tech enthusiast always looking to improve my skills. Fullstack experience ranges building microservices in using Python, AWS services, and React. Academic focus on machine learning and probablistic methods.",
+    "contactmessage":"To get in touch with me:",
     "email": "sstevensw@gmail.com",
     "phone": "808-781-3926",
     "github":"https://github.com/swstevens",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "project":"https://github.com/swstevens/react-website",
     "address":{
-      "street":"(Your Street)",
+      "street":"2155 Acton Street Apt 4",
       "city":"Berkeley",
       "state":"California",
-      "zip": "(Your Zip/Postal Code)"
+      "zip": "94702"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "https://swstevens.github.io/",
+    "resumedownload":"https://swstevens.github.io/",
     "social":[
       {
         "name":"linkedin",
@@ -25,7 +25,7 @@
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"https://www.instagram.com/itssheastevens/",
         "className":"fa fa-instagram"
       },
       {
@@ -36,33 +36,20 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
-    "education":[
-      {
-        "school":"University of Oregon",
-        "degree":"Computer and Information Science",
-        "graduated":"May 2021",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school":"`Iolani",
-        "degree":"Highschool Diploma",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      }
-    ],
+    "skillmessage":"My Work Experience",
+
     "work":[
       {
         "company":"Vindicia",
         "title":"Software Engineer",
         "years":"March 2022 - December 2023",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Expanded and developed new AWS microservices in Python and React. Designed and led API improvement projects across front-end and back-end. Maintained and enhanced Company Monolith in Perl. Built networking and communications skills in a professional environment."
       },
       {
-        "company":"University of Oregon Tech Desk",
+        "company":"University of Oregon Technology Service Desk",
         "title":"TSD Analyst 2",
         "years":"March 2019 - August 2021",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Worked directly with customers to solve computer and university account related issues. Coordinated with colleagues through Microsoft Teams. Maintained and contributed to public service portal articles and private private Confluent documentation."
       }
     ],
     "skills":[
@@ -72,7 +59,7 @@
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"65%"
       },
       {
         "name":"C/C#",
@@ -90,81 +77,41 @@
         "name":"Github/Bitbucket",
         "level":"85%"
       }
+    ],
+    "education":[
+      {
+        "school":"University of Oregon",
+        "degree":"Computer and Information Science",
+        "graduated":"May 2021",
+        "description":"BS Computer Information Sciences | GPA: 3.6\nFocus: AI and Game Programming $|$ Minors: Japanese, Mathematics\nCoursework: Probabilistic AI Methodology, Data Structures/Algorithms, Automata Theory"
+      }
     ]
   },
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
+        "title":"Image ASCII Converter",
         "category":"My Travel Blog for my post-university travels",
         "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "url":"https://github.com/swstevens/ascii-converter"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Brevets Calculator",
+        "category":"A rest based calculator for bike race times",
+        "image":"brevets.jpg",
+        "url":"https://bitbucket.org/swstevens/proj6-rest/src/master/"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"3d model ASCII render",
+        "category":"I project to embed a 3d model in react using ascii characters",
+        "image":"03.png",
+        "url":"/projects"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"This Website",
+        "category":"see the code I used to build this website",
+        "image":"img.jpg",
+        "url":"https://github.com/swstevens/react-website"
       }
     ]
   }
