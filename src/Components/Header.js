@@ -13,7 +13,7 @@ class Header extends Component {
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} options={{rps: 0.1}}/>
+        {/* <ParticlesBg type="circle" bg={true} options={{rps: 0.1}}/> */}
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">

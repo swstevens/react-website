@@ -30,7 +30,7 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
    
@@ -43,7 +43,7 @@ header:before {
    content: '';
    display: inline-block;
    vertical-align: middle;
-   height: 100%;
+   height: 100vh;
 }
 header .banner {
    display: inline-block;
