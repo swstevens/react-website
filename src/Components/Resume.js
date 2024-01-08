@@ -23,7 +23,7 @@ class Resume extends Component {
             {education.degree} <span>&bull;</span>
             <em className="date">{education.graduated}</em>
           </p>
-          <p>{education.description}</p>
+          <p>{education.description1}<br/>{education.description2}<br/>{education.description3}</p>
         </div>
       );
     });

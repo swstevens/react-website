@@ -83,7 +83,9 @@
         "school":"University of Oregon",
         "degree":"Computer and Information Science",
         "graduated":"May 2021",
-        "description":"BS Computer Information Sciences | GPA: 3.6\nFocus: AI and Game Programming $|$ Minors: Japanese, Mathematics\nCoursework: Probabilistic AI Methodology, Data Structures/Algorithms, Automata Theory"
+        "description1": "BS Computer Information Sciences | GPA: 3.6",
+        "description2": "Focus: AI and Game Programming | Minors: Japanese, Mathematics",
+        "description3": "Coursework: Probabilistic AI Methodology, Data Structures/Algorithms, Automata Theory"
       }
     ]
   },
