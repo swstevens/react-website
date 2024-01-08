@@ -1,0 +1,12 @@
+.loader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+html, body, :root, #app, #app>div {
+    height: 100%
+  }

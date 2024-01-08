@@ -11,6 +11,7 @@ import Portfolio from "./Portfolio";
 // import RoutesManager from "./RoutesManager";
 import { trefoil } from 'ldrs'
 import { useEffect, useState } from "react";
+import Loader from "./loader";
 
 export const MainPage = (data) => {
     const [loading, setLoading] = useState(true)
@@ -20,20 +21,11 @@ export const MainPage = (data) => {
         setTimeout(() => setLoading(false), 2000)
     }, [])
     if (loading) {
-        return (
-            <l-trefoil
-            size="40"
-            stroke="4"
-            stroke-length="0.15"
-            bg-opacity="0.1"
-            speed="1.4" 
-            color="white" 
-            ></l-trefoil>
-        )
+        return (<Loader/>)
     } else {
         return (
             <>
-                <div style={{height:"100vh"}}><Header data={data.data.main} /></div>
+                <Header data={data.data.main} />
                 <About data={data.data.main} />
                 <Resume data={data.data.resume} />
                 <Portfolio data={data.data.portfolio} />
