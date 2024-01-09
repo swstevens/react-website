@@ -40,6 +40,7 @@ header {
    overflow: hidden;
 }
 
+
 /* vertically center banner section */
 header:before {
    content: '';
@@ -115,7 +116,16 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 header .scrolldown a:hover { color: #0762f9; }
-
+canvas {
+   width: 100vw;
+   height: 100vh;
+   display: inline-block;
+   vertical-align: middle;
+   /* position: fixed; */
+   /* top: 0; */
+   /* left: 0; */
+   z-index: -9999;
+ }
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
