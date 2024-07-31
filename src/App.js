@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ProjectsPage from './Components/projects'
 import MainPage from './Components/mainpage'
 
-const HOME_ROUTE = '/react-website/'
+const HOME_ROUTE = '/'
 const PROJECTS_ROUTE = '/projects'
 
 class App extends Component {
