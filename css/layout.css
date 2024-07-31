@@ -34,12 +34,12 @@ header {
    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
    height: 100vh;
    min-height: 500px;
+   z-index: 1;
    width: 100%;
    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
    text-align: center;
    overflow: hidden;
 }
-
 
 /* vertically center banner section */
 header:before {
@@ -95,6 +95,16 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #0762f9; }
 
+header .canvas {
+   width: 100vw;
+   height: 100vh;
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+ }
+
 /* scrolldown link */
 header .scrolldown a {
    position: absolute;
@@ -116,16 +126,7 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 header .scrolldown a:hover { color: #0762f9; }
-canvas {
-   width: 100vw;
-   height: 100vh;
-   display: inline-block;
-   vertical-align: middle;
-   /* position: fixed; */
-   /* top: 0; */
-   /* left: 0; */
-   z-index: -9999;
- }
+
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
