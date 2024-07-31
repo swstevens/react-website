@@ -1,5 +1,5 @@
 {
-  "homepage": "https://swstevens.github.io/react-website",
+  "homepage": "https://swstevens.github.io/react-website/",
   "name": "swstevensreactresume",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +12,6 @@
     "@testing-library/user-event": "^12.1.10",
     "anix": "^1.3.7",
     "jquery": "^3.7.1",
-    "ldrs": "^1.0.1",
     "particles-bg": "^2.5.5",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
