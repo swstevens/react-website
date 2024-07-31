@@ -1,14 +1,14 @@
 {
   "main": {
     "name":"Shea Stevens",
-    "description":"I am a fullstack engineer and I use Python and React to develop frontend/backend communication",
+    "description":"I am a fullstack engineer and I use python react and to develop frontend/backend communication",
     "image":"profilepic.jpg",
     "bio":"I am an avid tech enthusiast always looking to improve my skills. Fullstack experience ranges building microservices in using Python, AWS services, and React. Academic focus on machine learning and probablistic methods.",
     "contactmessage":"To get in touch with me:",
     "email": "sstevensw@gmail.com",
     "phone": "808-781-3926",
     "github":"https://github.com/swstevens",
-    "project":"https://github.com/swstevens/projects",
+    "project":"https://github.com/swstevens/react-website",
     "address":{
       "street":"2155 Acton Street Apt 4",
       "city":"Berkeley",
@@ -16,7 +16,7 @@
       "zip": "94702"
     },
     "website": "https://swstevens.github.io/",
-    "resumedownload":"https://docs.google.com/document/d/1t9EJOfTz4Sb-FSxG4EIjQnrurpKnozAG/edit?usp=sharing&ouid=111977760492753900558&rtpof=true&sd=true",
+    "resumedownload":"https://swstevens.github.io/",
     "social":[
       {
         "name":"linkedin",
