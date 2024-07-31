@@ -30,13 +30,10 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   opacity: 1;
-   transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
-   height: 100vh;
+   height: 800px;
    min-height: 500px;
-   z-index: 1;
    width: 100%;
-   transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+   
    text-align: center;
    overflow: hidden;
 }
@@ -46,7 +43,7 @@ header:before {
    content: '';
    display: inline-block;
    vertical-align: middle;
-   height: 100vh;
+   height: 100%;
 }
 header .banner {
    display: inline-block;
@@ -94,16 +91,6 @@ header .social li {
 }
 header .social li a { color: #fff; }
 header .social li a:hover { color: #0762f9; }
-
-header .canvas {
-   width: 100vw;
-   height: 100vh;
-   display: block;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: -1;
- }
 
 /* scrolldown link */
 header .scrolldown a {
