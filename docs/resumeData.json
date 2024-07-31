@@ -1,0 +1,120 @@
+{
+  "main": {
+    "name":"Shea Stevens",
+    "description":"I am a fullstack engineer and I use python react and to develop frontend/backend communication",
+    "image":"profilepic.jpg",
+    "bio":"I am an avid tech enthusiast always looking to improve my skills. Fullstack experience ranges building microservices in using Python, AWS services, and React. Academic focus on machine learning and probablistic methods.",
+    "contactmessage":"To get in touch with me:",
+    "email": "sstevensw@gmail.com",
+    "phone": "808-781-3926",
+    "github":"https://github.com/swstevens",
+    "project":"https://github.com/swstevens/react-website",
+    "address":{
+      "street":"2155 Acton Street Apt 4",
+      "city":"Berkeley",
+      "state":"California",
+      "zip": "94702"
+    },
+    "website": "https://swstevens.github.io/",
+    "resumedownload":"https://swstevens.github.io/",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/swstevens/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"https://www.instagram.com/itssheastevens/",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/swstevens",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"My Work Experience",
+
+    "work":[
+      {
+        "company":"Vindicia",
+        "title":"Software Engineer",
+        "years":"March 2022 - December 2023",
+        "description":"Expanded and developed new AWS microservices in Python and React. Designed and led API improvement projects across front-end and back-end. Maintained and enhanced Company Monolith in Perl. Built networking and communications skills in a professional environment."
+      },
+      {
+        "company":"University of Oregon Technology Service Desk",
+        "title":"TSD Analyst 2",
+        "years":"March 2019 - August 2021",
+        "description":"Worked directly with customers to solve computer and university account related issues. Coordinated with colleagues through Microsoft Teams. Maintained and contributed to public service portal articles and private private Confluent documentation."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"90%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"65%"
+      },
+      {
+        "name":"C/C#",
+        "level":"75%"
+      },
+      {
+        "name":"JAVA",
+        "level":"55%"
+      },
+      {
+        "name":"AWS/EC2",
+        "level":"50%"
+      },
+      {
+        "name":"Github/Bitbucket",
+        "level":"85%"
+      }
+    ],
+    "education":[
+      {
+        "school":"University of Oregon",
+        "degree":"Computer and Information Science",
+        "graduated":"May 2021",
+        "description1": "BS Computer Information Sciences | GPA: 3.6",
+        "description2": "Focus: AI and Game Programming | Minors: Japanese, Mathematics",
+        "description3": "Coursework: Probabilistic AI Methodology, Data Structures/Algorithms, Automata Theory"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Image ASCII Converter",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"2dascii.png",
+        "url":"https://github.com/swstevens/ascii-converter"
+      },
+      {
+        "title":"Brevets Calculator",
+        "category":"A rest based calculator for bike race times",
+        "image":"brevets.jpg",
+        "url":"https://bitbucket.org/swstevens/proj6-rest/src/master/"
+      },
+      {
+        "title":"3d model ASCII render",
+        "category":"I project to embed a 3d model in react using ascii characters",
+        "image":"03.png",
+        "url":"/projects"
+      },
+      {
+        "title":"This Website",
+        "category":"see the code I used to build this website",
+        "image":"img.jpg",
+        "url":"https://github.com/swstevens/react-website"
+      }
+    ]
+  }
+}

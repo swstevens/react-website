@@ -26,11 +26,11 @@ function TorusKnot(){
 
 export const ProjectsPage = () => {
   return (
-    <div style={{height:"100vh"}}>
+    <div style={{height:"100vh", zStyle:-9999}}>
       <Canvas alpha={true} camera={{position: [0, 25, 0] }}>
-          <OrbitControls />
+          {/* <OrbitControls /> */}
           <color attach="background" args={['black']} />
-          <AsciiRenderer fgColor="white" bgColor="transparent"/>
+          <AsciiRenderer fgColor="darkgray" bgColor="transparent"/>
           <ambientLight intensity={0.5} />
           <directionalLight position={[10, 15, 10]} intensity={1}/>
           <TorusKnot />
