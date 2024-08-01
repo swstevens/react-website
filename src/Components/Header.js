@@ -1,6 +1,19 @@
 import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
+import { Canvas, useFrame } from '@react-three/fiber';
+import { AsciiRenderer,  } from "@react-three/drei";
+
+function TorusKnot(){
+  const ref = React.useRef()
+  useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta / 2))
+ 
+  return (
+    <instancedMesh args={[null, null, 10]} ref={ref}>
+      <torusKnotGeometry args={[7, 3, 100, 16]}></torusKnotGeometry>
+      <meshPhongMaterial color="tomato" />
+    </instancedMesh>
+  );
+};
 
 class Header extends Component {
   render() {
@@ -12,9 +25,9 @@ class Header extends Component {
     const description = this.props.data.description;
 
     return (
-      <header id="home">
-        <ParticlesBg type="circle" bg={true} options={{rps: 0.1}}/>
+      <>
 
+      <header id="home">
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
@@ -64,6 +77,7 @@ class Header extends Component {
             <Fade bottom duration={1200}>
               <h3>{description}.</h3>
             </Fade>
+            <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
                 <a href={project} className="button btn project-btn">
@@ -76,13 +90,21 @@ class Header extends Component {
             </Fade>
           </div>
         </div>
-
+        <div className='canvas'><Canvas alpha={true} camera={{position: [0, 25, 0] }} >
+            <color attach="background" args={['black']} />
+            <AsciiRenderer fgColor="#242526" bgColor="transparent"/>
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[10, 15, 10]} intensity={1}/>
+            <TorusKnot />
+          </Canvas>
+        </div>
         <p className="scrolldown">
           <a className="smoothscroll" href="#about">
             <i className="icon-down-circle"></i>
           </a>
         </p>
       </header>
+      </>
     );
   }
 }
